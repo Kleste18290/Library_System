@@ -7,27 +7,27 @@
  */
 public class Books
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Books
-     */
-    public Books()
+    private String Author;          // 
+    private String BookTitle;       // 
+    private String PublishDate;     //
+    private String Publisher;       //
+    private int BookID;             //
+    private String Theme;           //
+    
+    
+    // Placeholder variables for booking system.
+    private String Issuer;          // This will pull from the Staff component the user Class.  
+    private String DateOfBooking;   //
+    private String ReturnDate;      //
+    
+    public String getAuthor()
     {
-        // initialise instance variables
-        x = 0;
+        return Author;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    
+    public void setAuthor(String newAuthor)
     {
-        // put your code here
-        return x + y;
+        this.Author = newAuthor;
     }
+    
 }
