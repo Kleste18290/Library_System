@@ -18,7 +18,7 @@ public class Course
     
     private List<Module>    modules;
     private List<Staff>     staff;
-    private List<Student>   students;
+    private List<Customer>  students;
 
 
     /**

@@ -5,17 +5,19 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Media extends Library
+public class Media extends Penalties
 {
     private String author;         
-    private String mediaTitle;       
+    private String mediaTitle;
+    private String mediaType;
     private boolean isPhysical;
     
     private String publishDate;     
     private String publisher;       
     
     private int bookID;             
-    private String theme;           
+    private String theme;               // This can help categorise the media
+    // private List<Themes> subThemes;  // This can help categorise the media further
     
     
     // Placeholder variables for booking system.
@@ -23,6 +25,7 @@ public class Media extends Library
     //private String dateOfBooking;   //
     //private String returnDate;      //
     // private String 
+    
     
     // Getters for Class Variables - Media information
     
@@ -34,6 +37,11 @@ public class Media extends Library
         public String getMediaTitle()
     {
         return mediaTitle;
+    }
+    
+    public String getMediaType()
+    {
+    return mediaType;
     }
     
     public boolean getIsPhysical()
@@ -60,7 +68,7 @@ public class Media extends Library
     }
     
     
-    // Setters for Class Variables.
+    // Setters for Class Variables - Media information
     
         public void setAuthor(String newAuthor)
     {
@@ -72,10 +80,18 @@ public class Media extends Library
         this.mediaTitle = newMediaTitle;
     }
     
+    public void setMediaType(String newMediaType)
+    {
+        this.mediaType = newMediaType;
+    }
+    
     public void setIsPhysical(boolean newIsPhysical)
     {
         this.isPhysical = newIsPhysical;
     }
+
+    
+    // Setters for Class Variables - Publisher information
     
             public void setPublishDate(String newPublishDate)
     {
@@ -87,9 +103,11 @@ public class Media extends Library
         this.publisher = newPublisher;
     }
     
+    
+    // Setters for Class Variables - Book logging system Information.
+    
             public void setBookID(int newBookID)
     {
         this.bookID = newBookID;
-    }
-    
+    }    
 }
