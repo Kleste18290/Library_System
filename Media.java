@@ -10,7 +10,12 @@ public class Media extends Penalties
     private String author;         
     private String mediaTitle;
     private String mediaType;
+    private boolean inStock;
+    private int quantity;
+    
+    // Book properties
     private boolean isPhysical;
+    private String condition;
     
     private String publishDate;     
     private String publisher;       
@@ -25,6 +30,16 @@ public class Media extends Penalties
     //private String dateOfBooking;   //
     //private String returnDate;      //
     // private String 
+    
+        public Media(String Author, String mediaTitle, String mediaType, boolean isPhysical, String publishDate, String publisher) // Initialisation of the classes with placeholder variables.
+    {
+        author = "Unknown.";
+        mediaTitle = "Unknown.";
+        mediaType = "Unknown.";
+        inStock = false;
+        quantity = 0;
+    }
+    
     
     
     // Getters for Class Variables - Media information
@@ -41,12 +56,30 @@ public class Media extends Penalties
     
     public String getMediaType()
     {
-    return mediaType;
+        return mediaType;
     }
+    
+        public boolean getInStock()
+    {
+        return inStock;
+    }
+    
+        public int getQuantity()
+    {
+        return quantity;
+    }
+    
+
+    // Getters for Class Variables - Book Properties
     
     public boolean getIsPhysical()
     {
         return isPhysical;
+    }
+    
+        public String getCondition()
+    {
+        return condition;
     }
     
     
@@ -85,11 +118,28 @@ public class Media extends Penalties
         this.mediaType = newMediaType;
     }
     
+        public void setInStock(boolean newInStock)
+    {
+        this.inStock = newInStock;
+    }
+    
+            public void setQuantity(int newQuantity)
+    {
+        this.quantity = newQuantity;
+    }
+    
+    
+    // Setters for Class Variables - Media Condition
+    
     public void setIsPhysical(boolean newIsPhysical)
     {
         this.isPhysical = newIsPhysical;
     }
 
+        public void setCondition(String newCondition)
+    {
+        this.condition = newCondition;
+    }
     
     // Setters for Class Variables - Publisher information
     
@@ -109,5 +159,5 @@ public class Media extends Penalties
             public void setBookID(int newBookID)
     {
         this.bookID = newBookID;
-    }    
+    }   
 }
