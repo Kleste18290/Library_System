@@ -7,5 +7,11 @@
  */
 public class Library 
 {
+        private List<Media> media;
     
+    
+    public Library ()
+    {
+        media = new ArrayList();
+    }
 }
