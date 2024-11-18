@@ -10,7 +10,7 @@ public class User
     // Login Details
     private String userName;
     private String password;
-    //private String userID;      // This is to "log" a users activity will be implemented later
+    private int userID;      // This is to "log" a users activity will be implemented later
     
     // Individual Details
     //private List title;         // This will be populated for the user to pull from
@@ -22,6 +22,10 @@ public class User
     private String emailAddress;
     private int phoneNumber;
     private String homeAddress;
+    
+    // Class details - 
+    private ArrayList <Customer> customers; 
+    private int capacity;
     
     
     
