@@ -9,30 +9,25 @@ import java.util.*;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Customer extends Penalties
-{   
-        // Customer-related variables  
-    private List<Media> media;  // A list that holds what media the customer currently has.
-    private List<Penalties> pentalties;
-    
-    
-    //private boolean studentRep; - Instead of student rep maybe a tier system for customers?
-
-    public Customer()
+public class Customer Extends User
+        }
+    private String fullName;
+    private String customerID;
+    public Customer (String firstName, String surname, int userID)
     {
-        media = new ArrayList();
+        String fullName= firstName + surname;
+        String CustomerID= "";
+        
     }
     
-    // Getters
-    //    public String getYearsOfStudy()
-    //{
-    //    return yearsOfStudy;
-    //}
-
-    // Setters 
-    //public void setYearsOfStudy (String newYearsOfStudy)
-    //{
-    //    this.yearsOfStudy = newYearsOfStudy;
-    //}
+    public String getName()
+    {
+        return fullName;
+    }
+    
+        public void print()
+    {
+        System.out.println(fullName);
+    }
     
 }
